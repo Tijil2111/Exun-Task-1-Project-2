@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - MonkeHype</title>
     <link rel="stylesheet" href="contact.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -20,11 +21,11 @@
     </header>
     <section class="intro">
       <h1>Contact Us</h1>
-      <form class="form">
+      <form class="form" name="form" onsubmit="return validateForm()">
         <p>Your Name</p>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
         <p>Your Email Id</p>
-        <input type="text" id="email" name="email" />
+        <input type="text" id="email" name="email" required />
         <p>Your message</p>
         <textarea
           type="text"
@@ -33,9 +34,10 @@
           maxlength="200"
           rows="4"
           cols="50"
+          required
         ></textarea>
+        <input type="submit" id="submit" name="submit" class="btn" />
       </form>
-      <button class="btn">Submit</button>
     </section>
   </body>
 </html>

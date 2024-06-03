@@ -85,6 +85,10 @@ body {
   padding-top: 1%;
   color: var(--main);
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
 .form p {
   font-size: 20px;
   font-weight: 600;
